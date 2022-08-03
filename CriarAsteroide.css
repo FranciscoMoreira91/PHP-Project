@@ -1,0 +1,201 @@
+/* Body da página do login */
+
+body{
+    background: url('../Images/earth-bg-image.jpg');     
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#myForm{
+    margin-top: 60px;
+}
+
+/* Container geral de todos os componentes*/
+
+#generalContainer{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+         margin-top: 2%;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#CreateAsteroidTitle{
+    font-family: Open Sans;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+#createContainer{
+    margin: auto;
+    border-radius: 25px;
+    width: 650px;
+    background: rgba(0,0,0,0.6);
+}
+
+#asteroid_name{
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background-color: Transparent;
+    border: none;
+    border-bottom: 2px solid #2979ff;
+    margin-top: 2%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Quando passa o cursor por cima*/
+
+#asteroid_name:hover{
+    border-bottom: 2px solid #FAAF46;
+}
+
+/* Quando se vai escrever no input*/
+
+#asteroid_name:focus{
+    border-bottom: 2px solid #FAAF46;
+}
+
+#asteroid_desc {
+    color: lightgray;
+    margin-top: 2%;
+    resize: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: Transparent;
+    border: 2px solid #2979ff;
+}
+#asteroid_desc:focus{
+    border: 2px solid #FAAF46;
+}
+
+#asteroid_desc:hover{
+    border: 2px solid #FAAF46;
+}
+
+#asteroid_size, #asteroid_velocity,#asteroid_rotation_velocity,
+#asteroid_orbit_focus_1,#asteroid_orbit_focus_2{
+    color: lightgray;
+    font-family: Open Sans;
+    display: inline-block;
+    background-color: Transparent;
+    border: none;
+    border-bottom: 2px solid #2979ff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+#asteroid_size:hover, #asteroid_velocity:hover,#asteroid_rotation_velocity:hover,
+#asteroid_orbit_focus_1:hover,#asteroid_orbit_focus_2:hover{
+    border-bottom: 2px solid #FAAF46;
+}
+
+#asteroid_size:focus, #asteroid_velocity:focus,#asteroid_rotation_velocity:focus,
+#asteroid_orbit_focus_1:focus,#asteroid_orbit_focus_2:focus{
+    border-bottom: 2px solid #FAAF46;
+}
+
+#containerImages{
+    margin-top: 2%;
+}
+
+#asteroidImageInsert,#asteroidSkinInsert{
+    display: none;
+}
+
+#asteroid_image{
+    width: 275px;
+    height: 200px;
+}
+
+#asteroid_image:hover{
+    cursor: pointer;
+}
+
+#LeftImageContainer{
+    color: lightgray;
+    float: left;
+    text-align: center;
+    margin-left: 15px;
+}
+
+#RightImageContainer{
+    color: lightgray;
+    float: right;
+    text-align: center;
+    margin-right: 15px;
+}
+
+#asteroid_texture{
+    width: 275px;
+    height: 200px;
+}
+
+#asteroid_texture:hover{
+    cursor: pointer;
+}
+
+#send_asteroid{
+    display:inline-block;
+    margin-left: 225px;
+    margin-right: 225px;
+    width: 200px;
+    border: 1px solid lightblue;
+    color: lightblue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    background: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#send_asteroid:hover{
+    cursor: pointer;
+}
+
+label{
+    color: lightgray;
+    margin-left: 10px;
+}
+
+#dataTable{
+    margin-top: 20px;
+    width: 100%;
+    text-align: justify;
+}

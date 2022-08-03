@@ -1,0 +1,94 @@
+/* Body da página do login */
+
+body{
+    background: url('../Images/earth-bg-image.jpg');     
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Container geral de ambos os componentes*/
+
+#generalContainer{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#ButtonContainer{
+    margin-top: 50px;
+}
+
+#cont2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width: 500px;
+    height: 170px;
+    background: rgba(0,0,0,0.7);
+    display:block;
+    overflow: auto;
+}
+
+#TextParagraph{
+    color: lightgray;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: Open Sans;
+    text-align: center;
+}
+
+#deleteluas{
+    display:inline-block;
+    margin-left: 1%;
+    width: 200px;
+    border: 1px solid lightblue;
+    color: lightblue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    background: none;
+}
+
+#returnBTN{
+    display:inline-block;
+    margin-left: 9%;
+    width: 200px;
+    border: 1px solid lightblue;
+    color: lightblue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    background: none;
+}
